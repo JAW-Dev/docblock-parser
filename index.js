@@ -6,7 +6,6 @@ const getBlocks = require('./lib/getBlocks');
 const getShortDescription = require('./lib/parts/getShortDescription');
 const getLongDescription = require('./lib/parts/getLongDescription');
 const getTags = require('./lib/parts/getTags');
-const getFunction = require('./lib/parts/getFunction');
 
 const parseFiles = (file) => {
 	const readFile = readFileSync(file, { encoding: 'utf8', flag: 'r' });
