@@ -9,7 +9,7 @@ const getTags = require('./lib/parts/getTags');
 const getFunction = require('./lib/parts/getFunction');
 
 const parseFiles = (file) => {
-	const readFile = readFileSync(file, {encoding:'utf8', flag:'r'});
+	const readFile = readFileSync(file, { encoding: 'utf8', flag: 'r' });
 	const fileBlocks = getBlocks(readFile);
 
 	let docBlocks = [];
@@ -32,11 +32,6 @@ const parseFiles = (file) => {
 		const tags = getTags(fileBlocks[i]);
 		if (tags.length > 0) {
 			obj['tags'] = tags;
-		}
-
-		const getfunction = getFunction(fileBlocks[i]);
-		if (Object.keys(getfunction).length > 0) {
-			obj['function'] = getfunction;
 		}
 
 		docBlocks.push(obj);
