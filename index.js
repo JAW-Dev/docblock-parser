@@ -40,10 +40,4 @@ const parseFiles = (file) => {
 	return docBlocks;
 };
 
-const blocks = parseFiles('./docblock2.php');
-// const blocks = parseFiles('./docblock.js');
-
-// TODO: REMOVE!
-console.log(JSON.stringify(blocks, null, 2));
-
 module.exports = parseFiles;
