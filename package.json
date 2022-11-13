@@ -12,7 +12,7 @@
   "dependencies": {
     "fs-extra": "^9.0.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "line-number": "^0.1.0"
